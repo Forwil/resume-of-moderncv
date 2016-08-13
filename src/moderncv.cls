@@ -385,7 +385,7 @@
   \fi}
 
 % thebibliography environment, for use with BibTeX
-\newcommand{\refname}{Publications}
+%\newcommand{\refname}{论文与专利}
 \newlength{\bibindent}
 \setlength{\bibindent}{1.5em}
 % bibliography item label
