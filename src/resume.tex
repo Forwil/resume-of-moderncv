@@ -58,27 +58,28 @@
 
 \section{教育背景}
 \cventry{2011.9--2012.7}{\emph{本科:}北京航空航天大学}{数学与系统科学学院}{华罗庚数学实验班}{}
-{NOIp保送入学，大一结束转系进入计算机学院。}
+{NOIp保送入学，大一结束后转系进入计算机学院。}
 \cventry{2012.9--2015.7}{\emph{本科:}北京航空航天大学}{计算机学院}{计算机学院创新实验班}{}
-{校优秀毕业生，核心课程平均分：88/100。}
+{核心课程平均分：88/100。被选为毕业生代表与校长进行茶话座谈（共20人）。}
 \cventry{2015.9--至今}{\emph{研究生:}北京航空航天大学}{计算机学院}{软件工程}{}
-{本科综合排名7/228，保送入学。必修课程平均分：92/100。研究方向：形式化验证编译器、Java虚拟机。}
+{本科综合排名7/228，推免生保送入学。必修课程平均分：91/100。研究方向：形式化验证编译器、Java虚拟机。}
 \cvline{资格认证}{\emph{CCF:}计算机软件能力认证，成绩排名前 2.23\%}
 \section{获奖经历}
 \cventry{2009}{一等奖}{全国信息学奥林匹克联赛(NOIp)}{福建赛区}{325/400 第七名}{}
 \cventry{2010}{一等奖}{全国信息学奥林匹克联赛(NOIp)}{福建赛区}{310/400}{}
 \cventry{2011}{称号}{第十一届“福建省小科学家”}{福建}{}{}
-\cventry{2012}{二等奖}{北航第八届程序设计竞赛}{校级}{}{}
+%\cventry{2012}{二等奖}{北航第八届程序设计竞赛}{校级}{}{}
 \cventry{2013}{二等奖}{高教社杯全国大学生数学建模竞赛}{全国}{}{}
 \cventry{2014}{二等奖}{蓝桥杯全国软件大赛}{全国}{}{}
 \cventry{2015}{一等奖}{ASC15 世界大学生超级计算机竞赛}{国际}{第五名}{}
 \section{实习与项目经历}
 \cventry{2016.3--至今}{见习研究员}{SenseTime 商汤科技}{北京}{}
-{维护动态人脸检测跟踪系统（SenseFace的核心算法库），完成CPU版本的并行化方案设计、实现和优化，使系统可以实时处理1080P视频流，重构代码使得其满足公司自有的SDK规范并对外发布。并把系统移植到NVIDIA Tegra X1 嵌入式平台上,优化后初步满足实时性要求。在MOT16（Multiple Object Tracking）上，使用行人检测和re-id特征优化了Tracking算法，取得包括MOTA在内的多项指标世界第一，发表ECCV workshop paper一篇（一作/在投）。实现并维护视频结构化算法库SenseObject。}  
+{维护动态人脸检测跟踪系统（SenseFace-GPU），把系统移植到NVIDIA Tegra X1 嵌入式平台上,优化后初步满足实时性要求。完成CPU版本的并行化方案设计、实现和优化，使系统可以实时处理1080P视频流。重构代码使得其满足公司自有的SDK规范并对外发布（sdkvideo）。把sdkvideo移植到宇视摄像头芯片中，并尝试使用movidius芯片进行深度学习算法加速。实现并维护视频结构化算法库SenseObject-GPU。在MOT16（Multiple Object Tracking）上，使用行人检测和re-id特征优化了Tracking算法，取得包括MOTA在内的多项指标世界第一，发表ECCV workshop paper一篇（一作/在投\cite{POI1}）。}  
+
 \cventry{2014.12--2015.5}{北航代表队队长}{ASC15 世界大学生超级计算机竞赛}{山西-太原}{}
 {在初赛中对 HPCC 的多个测试子项目（包括 Linpack、FFT、DGEMM）进行深入分析和编译优化，撰写英文proposal，队伍以初赛大陆第一，世界第二进入全球总决赛。在总决赛中负责集群软硬件平台搭建与功耗控制、HPL、HPCG调优与 WRF-CHEM 应用优化，最终队伍以全球第五名获得一等奖。} 
 \cventry{2014.7--2014.12}{研发实习生}{微软亚太研发集团，CEC - IoT Group}{北京}{}
-{先后参与三个项目：1、为 STM32F 上的.Net Micro Framework 固件添加高级 ADC 操作；2、设计并实现在 51MCU 上的 RS-485 总线通信协议；3、提取测试程序调用外部库的依赖关系，存入数据库并对外提供 WCF 接口。} 
+{先后参与三个项目：1、在智能插座项目中，为 STM32F 上的.Net Micro Framework 固件添加高级 ADC 操作；2、在基于低功耗蓝牙的室内定位项目中，设计并实现在 51MCU 上的 RS-485 总线通信协议；3、在自动化测试项目中，提取测试程序调用外部库的依赖关系，存入数据库并对外提供 WCF 接口。} 
 \cventry{2013.9--2013.12}{项目}{“向小葵”点评网}{课程设计}{https://github.com/Forwil/xxk}
 {使用 Python 的 WebPy 框架开发的点评书籍、电影和音乐的平台网站。前端采用 Bootstrap-UI 框架，数据库使用了 MySQL。负责前端界面设计与实现及后端数据处理和展示逻辑。队友设计了数据库触发器，存储过程。} 
 \cventry{2013.9--2014.1}{项目}{扩展PL/0文法的编译器}{课程设计}{https://github.com/Forwil/pl0ex}
@@ -90,13 +91,13 @@
 \cvlanguage{Python}{$\bigstar\bigstar\bigstar$}{熟练使用其编写常用脚本/网页爬虫/网站后端}
 \cvlanguage{C\#/Java}{$\bigstar\bigstar$}{能够很好地运用面向对象编程范式编写可维护的软件}
 \cvlanguage{JavaScript}{$\bigstar\bigstar$}{能配合HTML/CSS，实现简单的网页功能，如交互、验证或配合Ajax实现高级操作，使用过HTML5相关特性（websocket，canvas）}
-\cvlanguage{Coq/Ocaml}{$\bigstar$}{理解函数式编程，了解如何编写可验证程序}
+%\cvlanguage{Coq/Ocaml}{$\bigstar$}{理解函数式编程，了解如何编写可验证程序}
 
 \section{相关技能}
 \cvlanguage{Linux}{}{熟悉其软硬件环境安装，配置，编译链接，调试，习惯在Linux下工作}
 \cvlanguage{Git}{}{能使用其对项目进行管理和维护，熟悉基本的远程仓库、分支功能}
 \cvlanguage{算法与数据结构}{}{熟练掌握常见数据结构和算法，了解大多数高级数据结构，能正确估算程序的时间/空间复杂度}
-\cvlanguage{并行计算调优}{}{理解并行编程基本方式，会使用MPI/OPENMP编写多进程/线程程序}
+%\cvlanguage{并行计算调优}{}{理解并行编程基本方式，会使用MPI/OPENMP编写多进程/线程程序}
 \cvlanguage{网页前端/后端}{}{能够同时使用PHP/Python/JS/CSS/HTML/SQL编写完整的web应用}
 \cvlanguage{编程语言虚拟机}{}{了解Java虚拟机，阅读过Android上的ART虚拟机源码}
   
@@ -110,9 +111,9 @@
 
 
 %% Publications from a BibTeX file
-%\nocite{*}
-%\bibliographystyle{plain}
-%\bibliography{publications}       % 'publications' is the name of a BibTeX file
+
+\bibliographystyle{plain}
+\bibliography{bibtex}      % 'publications' is the name of a BibTeX file
 
 \end{document}
 
