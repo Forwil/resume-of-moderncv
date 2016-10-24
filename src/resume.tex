@@ -75,17 +75,17 @@
 \cventry{2015,2016}{一等奖}{硕士研究生学业奖学金}{校级}{}{}
 \section{实习与项目经历}
 \cventry{2016.3--至今}{见习研究员}{SenseTime 商汤科技}{北京}{}
-{维护动态人脸检测跟踪系统（SenseFace），把系统移植到NVIDIA Tegra X1 嵌入式平台上,优化后初步满足实时性要求。完成CPU版本的并行化方案设计、实现和优化，使系统可以实时处理1080P视频流。重构代码使得其满足公司自有的SDK规范并对外发布（sdkvideo）。把sdkvideo移植到宇视摄像头芯片中，并尝试使用movidius芯片进行深度学习算法加速。实现并维护视频结构化算法库SenseObject。在MOT16（Multiple Object Tracking）上，使用行人检测和re-id特征优化了Tracking算法，取得包括MOTA（68.2和66.1）在内的多项指标世界第一，以第一作者身份发表一篇ECCV workshop paper。}  
+{维护动态人脸检测跟踪系统SenseFace-SDK，把系统移植到NVIDIA Tegra X1 嵌入式平台上，优化后满足实时性要求。完成CPU版本的并行化方案设计、实现和优化，使系统可以实时处理1080P视频流。重构代码使得其满足公司自有的SDK规范并对外发布（sdkvideo）。把sdkvideo移植到宇视摄像头芯片（ARM）中，并使用movidius芯片进行深度学习算法加速。实现并维护视频结构化系统SenseObject-SDK。在MOT16（Multiple Object Tracking）上，使用行人检测和re-id特征优化了Tracking算法，取得包括MOTA（68.2和66.1）在内的多项指标世界第一，以第一作者身份发表一篇ECCV workshop paper。}  
 \cventry{2015.9--2015.11}{项目}{多功能WiFi路由器}{课程设计}{https://github.com/Forwil/embedded-socks}
 {基于OpenWRT路由器固件和socks5代理协议，实现集齐信号增强、校园网免验证、自动翻墙三功能合一的无线路由器。实现简单web界面支持用户自行选择是否免验证、翻墙。同时提供android手机客户端。}
 \cventry{2014.12--2015.5}{北航代表队队长}{ASC15 世界大学生超级计算机竞赛}{山西-太原}{}
-{在初赛中对 HPCC 的多个测试子项目（包括 Linpack、FFT、DGEMM）进行深入分析和编译优化，撰写英文proposal，队伍以初赛大陆第一，世界第二进入全球总决赛。在总决赛中负责集群软硬件平台搭建与功耗控制、HPL、HPCG调优与 WRF-CHEM 应用优化，最终队伍以全球第五名获得一等奖。} 
-\cventry{2014.7--2014.12}{研发实习生}{微软亚太研发集团，CEC - IoT Group}{北京}{}
+{在初赛中对 HPCC 的多个测试子项目（包括 Linpack、FFT、DGEMM）进行深入分析和编译优化，撰写英文proposal，队伍以初赛大陆第一，世界第二进入全球总决赛。在总决赛中负责集群软硬件平台搭建、功耗控制、HPL、HPCG调优与 WRF-CHEM 应用优化，最终队伍以全球第五名获得一等奖。} 
+\cventry{2014.7--2014.12}{研发实习生}{MicroSoft ARD 微软亚太研发集团，CEC - IoT Group}{北京}{}
 {先后参与三个项目：1、在智能插座项目中，为 STM32F 上的.Net Micro Framework 固件添加高级 ADC 操作；2、在基于低功耗蓝牙的室内定位项目中，设计并实现在 51MCU 上的 RS-485 总线通信协议；3、在自动化测试项目中，提取测试程序调用外部库的依赖关系，存入数据库并对外提供 WCF 接口。} 
 \cventry{2013.9--2013.12}{项目}{“向小葵”点评网}{课程设计}{https://github.com/Forwil/xxk}
 {使用 Python 的 WebPy 框架开发的点评书籍、电影和音乐的平台网站。前端采用 Bootstrap-UI 框架，数据库使用了 MySQL。负责前端界面设计与实现及后端数据处理和展示逻辑。队友设计了数据库触发器，存储过程。} 
 \cventry{2013.9--2014.1}{项目}{扩展PL/0文法的编译器}{课程设计}{https://github.com/Forwil/pl0ex}
-{使用标准 C 库，设计并实现了扩展 PL/0 文法的编译器（目标语言为 MIPS 汇编），包括全手写的词法分析、语法分析、语义分析，中间四元式，寄存器分配，目标语言生成，公共子表达式优化。} 
+{使用标准 C 库，设计并实现了扩展 PL/0 文法的编译器（目标语言为 MIPS 汇编），包括全手写的词法分析、语法分析、语义分析，实现了中间四元式，寄存器分配，目标语言生成，公共子表达式优化。} 
 \cventry{2012.9--2013.1}{项目}{MIPS处理器设计}{课程设计}{https://github.com/Forwil/Mips-C}
 {使用 Verilog HDL，设计并实现了支持 55 条基本指令集的 MIPS 多周期处理器，指令包括基本四则运算、条件分支、函数调用与异常中断。} 
 \section{编程语言}
@@ -120,7 +120,7 @@
 %\bibliographystyle{moderncv}
 %\bibliography{bibtex}      % 'publications' is the name of a BibTeX file
 \cvitem{2016}{\textbf{Fengwei Yu}, Wenbo Li, Quanquan Li, Yu Liu, Xiaohua Shi, and Junjie Yan. POI: Multiple object
-tracking with high performance detection and appearance feature. In Proceedings of the European Conference on Computer Vision （\textbf{ECCV}） 2016 Workshop (BMTT).}
+tracking with high performance detection and appearance feature. In Proceedings of the European Conference on Computer Vision （\textbf{ECCV}） 2016 Workshop (BMTT). \textbf{EI}.}
 \cvitem{2016}{专利：一种基于卷积神经网络特征的多目标在线跟踪算法（在投）}
 \end{document}
 
