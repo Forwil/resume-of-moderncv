@@ -14,7 +14,7 @@
 \setmainfont{Tahoma}
 \usepackage{xkeyval}
 \usepackage[slantfont,boldfont]{xeCJK}
-\usepackage{xcolor}                 % replace by the encoding you are using
+%\usepackage{xcolor}                 % replace by the encoding you are using
 %\setCJKmainfont{Adobe Song Std L}  % 如果有安装Adobe Song 字体，就用这个吧
 \setCJKmainfont{SimSun}             % 没有安装Adobe Song 字体的就换回SimSun字体吧
 \setCJKfamilyfont{song}{SimSun}
@@ -62,7 +62,7 @@
 \cventry{2012.9--2015.7}{\emph{本科:}北京航空航天大学}{计算机学院}{计算机学院创新实验班}{}
 {核心课程平均分：88/100。被选为毕业生代表与校长进行茶话座谈（共20人）。}
 \cventry{2015.9--至今}{\emph{研究生:}北京航空航天大学}{计算机学院}{软件工程}{}
-{本科综合排名7/228，推免生保送入学。学位课程平均分：90.0/100，排名：6/241。研究方向：形式化验证编译器、Java虚拟机。}
+{本科综合排名7/228，推免生保送入学。学位课程平均分：90.0/100，排名：6/241。研究方向：形式化验证编译器、Java虚拟机、自然语言处理。}
 \cvline{资格认证}{\emph{CCF:}计算机软件能力认证，成绩排名前 2.23\%}
 \section{获奖经历}
 \cventry{2009}{一等奖}{全国信息学奥林匹克联赛(NOIp)}{福建赛区}{325/400 第七名}{}
@@ -75,11 +75,11 @@
 \cventry{2015,2016}{一等奖}{硕士研究生学业奖学金}{校级}{}{}
 \section{实习与项目经历}
 \cventry{2016.3--至今}{见习研究员}{SenseTime 商汤科技}{北京}{}
-{维护动态人脸检测跟踪系统SenseFace-SDK，把系统移植到NVIDIA Tegra X1 嵌入式平台上，优化后满足实时性要求。完成CPU版本的并行化方案设计、实现和优化，使系统可以实时处理1080P视频流。重构代码使得其满足公司自有的SDK规范并对外发布（sdkvideo）。把sdkvideo移植到宇视摄像头芯片（ARM）中，并使用movidius芯片进行深度学习算法加速。实现并维护视频结构化系统SenseObject-SDK。在MOT16（Multiple Object Tracking）上，使用行人检测和re-id特征优化了Tracking算法，取得包括MOTA（68.2和66.1）在内的多项指标世界第一，以第一作者身份发表一篇ECCV workshop paper。}  
+{维护动态人脸检测跟踪系统SenseFace-SDK，把系统移植到NVIDIA Tegra X1 嵌入式平台上，优化后满足实时性要求，于2016北京安博会展出。完成CPU版本的并行化方案设计、实现和优化，使系统可以实时处理1080P视频流。重构代码使得其满足公司自有的SDK规范并对外发布（sdkvideo），提出一种基于跟踪的检测框再调整策略，可以大大降低检测次数，提升系统速度。把sdkvideo移植到宇视摄像头芯片（armv7）中并优化检测跟踪速度2hz至16h。协助实习生使用movidius芯片进行深度学习算法加速，成功完成caffe model到mvtensor的自动转换工具链，并移植了人脸识别模型。实现并维护视频结构化系统SenseObject-SDK。在MOT16（Multiple Object Tracking）上，使用行人检测和re-id特征优化了Tracking算法，取得包括MOTA（68.2和66.1）在内的多项指标世界第一，以第一作者身份发表一篇ECCV workshop paper。}  
 \cventry{2015.9--2015.11}{项目}{多功能WiFi路由器}{课程设计}{https://github.com/Forwil/embedded-socks}
 {基于OpenWRT路由器固件和socks5代理协议，实现集齐信号增强、校园网免验证、自动翻墙三功能合一的无线路由器。实现简单web界面支持用户自行选择是否免验证、翻墙。同时提供android手机客户端。}
 \cventry{2014.12--2015.5}{北航代表队队长}{ASC15 世界大学生超级计算机竞赛}{山西-太原}{}
-{在初赛中对 HPCC 的多个测试子项目（包括 Linpack、FFT、DGEMM）进行深入分析和编译优化，撰写英文proposal，队伍以初赛大陆第一，世界第二进入全球总决赛。在总决赛中负责集群软硬件平台搭建、功耗控制、HPL、HPCG调优与 WRF-CHEM 应用优化，最终队伍以全球第五名获得一等奖。} 
+{在初赛中：负责4台浪潮服务器组成超算小集群的软硬件搭建和维护，对 HPCC 的多个测试子项目（包括 Linpack、FFT、DGEMM）进行深入分析和编译优化，撰写英文proposal，队伍以初赛大陆第一，世界第二进入全球总决赛。在总决赛中：负责集群软硬件平台搭建、功耗控制、HPL、HPCG调优、WRF-CHEM 应用优化和集群运行策略调度，最终队伍以全球第五名获得一等奖。} 
 \cventry{2014.7--2014.12}{研发实习生}{MicroSoft ARD 微软亚太研发集团，CEC - IoT Group}{北京}{}
 {先后参与三个项目：1、在智能插座项目中，为 STM32F 上的.Net Micro Framework 固件添加高级 ADC 操作；2、在基于低功耗蓝牙的室内定位项目中，设计并实现在 51MCU 上的 RS-485 总线通信协议；3、在自动化测试项目中，提取测试程序调用外部库的依赖关系，存入数据库并对外提供 WCF 接口。} 
 \cventry{2013.9--2013.12}{项目}{“向小葵”点评网}{课程设计}{https://github.com/Forwil/xxk}
@@ -99,7 +99,7 @@
 \cvitem{Linux}{熟悉其软硬件环境安装，配置，编译链接，调试，习惯在Linux下工作}
 \cvitem{Git}{能使用其对项目进行管理和维护，熟悉基本的远程仓库、分支功能}
 \cvitem{算法与数据结构}{熟练掌握常见数据结构和算法，了解大多数高级数据结构，能正确估算程序的时间/空间复杂度}
-%\cvitem{并行计算调优}{理解并行编程基本方式，会使用MPI/OPENMP编写多进程/线程程序}
+\cvitem{并行计算调优}{理解并行编程基本方式，会使用MPI/OPENMP编写多进程/线程程序}
 \cvitem{网页前端/后端}{能够同时使用PHP/Python/JS/CSS/HTML/SQL编写完整的web应用}
 %\cvitem{编程语言虚拟机}{了解Java虚拟机，阅读过Android上的ART虚拟机源码}
   
